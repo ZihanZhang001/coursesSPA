@@ -3,12 +3,12 @@ describe("Manage Courses page", () => {
 
     beforeEach(() => {
         // Delete all donations in the API's datastore
-        cy.request('http://localhost:3000/courses/')
+        cy.request('https://damp-cove-14583.herokuapp.com/courses/')
           .its('body')
           .then( (courses) => {
             courses.forEach( (element) => {
                 cy.request('DELETE',
-                   'http://localhost:3000/courses/' + element._id)
+                   'https://damp-cove-14583.herokuapp.com/courses/' + element._id)
              });
           })
           // Populate API's datastore
@@ -16,7 +16,7 @@ describe("Manage Courses page", () => {
             .then((courses) => {
               courses.forEach((course) => {
                   cy.request('POST',
-                     'http://localhost:3000/courses/', course )
+                     'https://damp-cove-14583.herokuapp.com/courses', course )
                 })
           })
           cy.visit("/");
