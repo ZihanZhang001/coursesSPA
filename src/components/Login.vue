@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import CourseService from '@/services/CourseService'
+import CourseService from '@/services/courseservice'
 export default {
   methods: {
     login: function () {

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import CourseService from '@/services/CourseService'
+import CourseService from '@/services/courseservice'
 import Vue from 'vue'
 import VueTables from 'vue-tables-2'
 import Footer from '@/components/Footer'

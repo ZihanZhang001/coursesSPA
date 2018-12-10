@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import CourseService from '@/services/CourseService'
+import CourseService from '@/services/courseservice'
 import CourseForm from '@/components/CourseForm'
 import Footer from '@/components/Footer'
 
