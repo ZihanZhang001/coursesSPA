@@ -1,0 +1,5 @@
+[
+  {"name":"math","type": "P","size": 16,"room":"A01","time":9.15},
+  {"name":"english","type": "P", "size":30,"room":"A02","time":10.15},
+  {"name":"software","type": "L", "size": 100,"room":"A03","time":15.15}
+]
