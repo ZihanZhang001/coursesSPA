@@ -18,7 +18,7 @@
     </table>
 
     <p></p>
-    <p class="lead">This is the homepage of <b>Course</b> Web app</p>
+    <p class="lead">This is the homepage of <b>Course management</b> Web app</p>
   </div>
 </template>
 
