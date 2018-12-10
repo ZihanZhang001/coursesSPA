@@ -27,7 +27,7 @@ export default {
               this.$store.dispatch('login', res.data).then(() => {
                 this.$notify({
                   type: 'success',
-                  message: '欢迎你,' + res.data.name + '!',
+                  message: 'welcome ,' + res.data.name + '!',
                   duration: 3000
                 })
                 this.$router.replace('/main')
@@ -35,14 +35,14 @@ export default {
             } else {
               this.$message({
                 type: 'error',
-                message: '用户名或密码错误',
+                message: 'invalid name or password',
                 showClose: true
               })
             }
           }).catch(() => {
             this.$message({
               type: 'error',
-              message: '网络错误，请重试',
+              message: 'Network error，please try again',
               showClose: true
             })
           })

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>主页面</h1>
-    欢迎!<b @click="login">点这里</b>
+    <h1>Thank you for login</h1>
+    welcome!<b @click="login">Click here</b>
   </div>
 </template>
 
