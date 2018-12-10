@@ -34,6 +34,10 @@ describe("Manage Courses page", () => {
         cy.get('button').contains('Delete').click()
         cy.get('tbody').find('tr').should('have.length', 2)
     });
+    it("edit a course", () => {
+      cy.get('tbody').find('tr:nth-child(1)').find('td:nth-child(8)').click()
+      cy.url().should('include','/edit' )
+    });
 
     // it("shows and hides a donation's message", () => {
     //     // Click + symbol of 2nd donation in list

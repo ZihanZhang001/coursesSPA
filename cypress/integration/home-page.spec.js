@@ -31,7 +31,14 @@ describe("Home page", () => {
         cy.url().should('include','/release' )
         cy.get(".navbar").contains('Manage' ).click();
         cy.url().should('include','/courses' )
-        // etc
+        cy.get(".navbar").contains('Map' ).click();
+        cy.url().should('include','/map' )
+        cy.get(".navbar").contains('About' ).click();
+        cy.url().should('include','/about' )
+        cy.get(".navbar").contains('Contact' ).click();
+        cy.url().should('include','/contact' )
+        cy.get(".navbar").contains('Login' ).click();
+        cy.url().should('include','/login' )
       });
     })
 });
