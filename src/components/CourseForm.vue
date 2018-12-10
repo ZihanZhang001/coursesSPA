@@ -10,8 +10,9 @@
     </div>
     <div class="form-group" :class="{ 'form-group--error': $v.time.$error }">
       <label class="form-control-label" name="time">Time (Enter a time between 0 and 24)</label>
-      <input data-test="amount" class="form__input" type="decimal" v-model.trim="time"/>
+      <input data-test="time" class="form__input" placeholder="enter time" type="decimal" v-model.trim="time"/>
     </div>
+    <div class="error" v-if="!$v.time.required">Time is Required</div>
     <div class="error" v-if="!$v.time.between">Time must be between 0 and 24</div>
     <div class="form-group" :class="{ 'form-group--error': $v.name.$error }">
       <label class="form__label">Name</label>

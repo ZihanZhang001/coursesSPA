@@ -20,7 +20,7 @@ import Footer from '@/components/Footer'
 export default {
   data () {
     return {
-      course: {type: 'P', time: 0.0, name: '', size: 1, room: ''},
+      course: {type: 'P', name: '', size: 1, room: ''},
       messagetitle: ' Release Course '
     }
   },
