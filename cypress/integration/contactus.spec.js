@@ -1,4 +1,4 @@
-describe("About us", () => {
+describe("Contact us", () => {
 
   beforeEach(() => {
     cy.visit("/");
