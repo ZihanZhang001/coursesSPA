@@ -5,7 +5,7 @@ describe("Home page", () => {
   });
 
   it("Shows a header", () => {
-    cy.get(".vue-title").should('contain','Welcome !!');
+    cy.get(".vue-title").should('contain','Hello');
   });
 
   describe("Navigation bar", () => {
