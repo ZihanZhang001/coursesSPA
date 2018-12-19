@@ -5,4 +5,3 @@ export default() => {
     baseURL: 'https://damp-cove-14583.herokuapp.com/'
   })
 }
-

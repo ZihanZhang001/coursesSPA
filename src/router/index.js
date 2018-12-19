@@ -9,6 +9,8 @@ import Edit from '@/components/Edit'
 import CMap from '@/components/CMap'
 import Login from '@/components/Login'
 import Main from '@/components/Main'
+import Message from '@/components/Loginmessage'
+import Logout from '@/components/Logout'
 
 Vue.use(Router)
 
@@ -45,6 +47,11 @@ export default new Router({
       component: Login
     },
     {
+      path: '/message',
+      name: 'Message',
+      component: Message
+    },
+    {
       path: '/about',
       name: 'AboutUs',
       component: AboutUs
@@ -59,6 +66,11 @@ export default new Router({
       name: 'Edit',
       component: Edit,
       props: true
+    },
+    {
+      path: '/logout',
+      name: 'Logout',
+      component: Logout
     }
   ]
 })
