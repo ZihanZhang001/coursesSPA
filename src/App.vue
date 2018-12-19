@@ -7,8 +7,8 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-nav-item to="/#"><i class="fa fa-home" style="padding: 5px"> Home</i></b-nav-item>
-          <b-nav-item to="/courses"><i class="fa fa-list" style="padding: 5px"> Manage Courses</i></b-nav-item>
-          <b-nav-item data-test="releasebtn" to="/release"><i class="fa fa-puzzle-piece" style="padding: 5px"> Release</i></b-nav-item>
+          <b-nav-item v-if="this.$store.state.user !== undefined" to="/courses"><i class="fa fa-list" style="padding: 5px"> Manage Courses</i></b-nav-item>
+          <b-nav-item v-if="this.$store.state.user !== undefined" data-test="releasebtn" to="/release"><i class="fa fa-puzzle-piece" style="padding: 5px"> Release</i></b-nav-item>
           <b-nav-item to="/map"><i class="fa fa-globe" style="padding: 5px"> Map</i></b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">

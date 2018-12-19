@@ -4,7 +4,7 @@ describe("About us", () => {
     cy.visit("/");
     // Click Donate navbar link
     cy.get('.navbar-nav:nth-child(2)').
-    find('.nav-item:nth-child(1)').click()
+    find('.nav-item:first').click()
   });
 
   it("Shows a header", () => {
