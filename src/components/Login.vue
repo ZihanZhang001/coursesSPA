@@ -9,7 +9,7 @@
         <el-input v-model="user.pass" type="password"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" icon="el-icon-upload" @click="login">login</el-button>
+        <el-button type="primary" icon="el-icon-upload2" @click="login">login</el-button>
       </el-form-item>
     </el-form>
   </el-row>

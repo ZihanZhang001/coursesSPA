@@ -2,7 +2,7 @@
   <div>
     <h1>Logout</h1>
     If You Really Want to Log out, Click Here
-    <span v-if="user"> 
+    <span v-if="user">
             <el-button type="warning"  @click="logout">Logout</el-button>
     </span>
     <el-button v-else type="success" @click="login">Login</el-button>
